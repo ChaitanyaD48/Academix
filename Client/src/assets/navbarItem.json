@@ -1,0 +1,33 @@
+[
+  {
+    "link": "/attendance",
+    "tag": "Attendance"
+  },
+  {
+    "link": "/student/attendanceshow",
+    "tag": "ShowAtt"
+  },
+  {
+    "link": "/marks",
+    "tag": "Marks"
+  },
+  {
+    "link": "/student/marksshow",
+    "tag": "ShowM"
+  },
+  {
+    "link": "/feedback",
+    "tag": "Feedback"
+  },
+  {
+    "link": "/plagchecker",
+    "tag": "Plagiarism"
+  },
+  {
+    "link": "/assignment",
+    "tag": "Assignment"
+  }
+  
+  
+  
+]
