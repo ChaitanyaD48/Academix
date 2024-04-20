@@ -3,7 +3,7 @@ name: Security Issue
 about: Report the potential vulnerability or security issue
 title: "seclog: [Event Description] "
 labels: security, vulnerability
-assignees: ""
+assignees: ChaitanyaD48
 ---
 
 ### Summary
