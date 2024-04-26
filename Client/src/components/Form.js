@@ -36,10 +36,11 @@ export default function Form() {
               Investment
             </option>
             <option value="Expense">Expense</option>
-            <option value="Savings">Savings</option>
+            <option value="Savings">Research Aid</option>
             <option value="Student Activity Council">
               Student Activity Council
             </option>
+            <option value="Operations">Operational Costs</option>
           </select>
           <div className="input-group">
             <input

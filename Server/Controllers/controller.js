@@ -4,10 +4,10 @@ const model = require("../model/model.js");
 async function create_Categories(req, res) {
   try {
     const Create = new model.Categories({
-      // type: req.body.type,
-      // color: req.body.color
-      type: "Investment",
-      color: "#008DDA",
+      type: req.body.type,
+      color: req.body.color,
+      // type: "Operations",
+      // color: "#FF8080",
     });
 
     await Create.save();
@@ -112,6 +112,14 @@ async function get_Labels(req, res) {
     });
 }
 
+const transactions = [
+  { name: "Transaction 1", category: "Food", amount: 50.0 },
+];
+
+function download_csv(req, res) {
+  res.send(transactions);
+}
+
 module.exports = {
   create_Transaction,
   get_Transaction,
@@ -119,4 +127,5 @@ module.exports = {
   get_Categories,
   delete_Transaction,
   get_Labels,
+  download_csv,
 };

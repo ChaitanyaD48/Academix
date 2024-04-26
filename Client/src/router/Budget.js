@@ -4,7 +4,10 @@ import Form from "../components/Form";
 
 function Budget() {
   return (
-    <div className="bg-white budget min-h-[100vh]">
+    <div
+      className="bg-white budget min-h-[100vh]"
+      style={{ fontFamily: "Montserrat, sans-serif" }}
+    >
       <h1 className="text-4xl text-center py-8 mb-10 bg-slate-800 text-white">
         Expense Tracker
       </h1>
