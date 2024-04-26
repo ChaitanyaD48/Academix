@@ -1,5 +1,5 @@
 ---
-name: Security Issue
+name: "\U0001F4BB Security Issue"
 about: Report the potential vulnerability or security issue
 title: "seclog: [Event Description] "
 labels: security, vulnerability
