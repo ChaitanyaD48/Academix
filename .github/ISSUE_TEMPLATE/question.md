@@ -17,4 +17,4 @@ Feel free to get your queries resolved.
 
 **We primarily use GitHub as an issue tracker; for usage and support questions, please check out these resources below. Thanks!**
 
-- [LitmusChaos Readme](https://github.com/ChaitanyaD48/Academix/issues)
+- [Academix Readme](https://github.com/ChaitanyaD48/Academix/issues)

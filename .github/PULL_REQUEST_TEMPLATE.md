@@ -6,7 +6,8 @@ Summarize your changes here to communicate with the maintainers and make sure to
 
 ## Types of changes
 
-What types of changes does your code introduce to Litmus? Put an `x` in the boxes that apply
+What types of changes does your code introduce to Academix? Put an `x` in the boxes that apply
+
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Bugfix (non-breaking change which fixes an issue)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
@@ -15,6 +16,7 @@ What types of changes does your code introduce to Litmus? Put an `x` in the boxe
 ## Checklist
 
 Put an `x` in the boxes that apply. You can also fill these out after creating the PR. If you're unsure about any of them, don't hesitate to ask. We're here to help! This is simply a reminder of what we are going to look for before merging your code.
+
 - [ ] I have read the contributing guidelines
 - [ ] I have signed the commit for DCO to be passed.
 - [ ] Lint and unit tests pass locally with my changes
@@ -22,6 +24,7 @@ Put an `x` in the boxes that apply. You can also fill these out after creating t
 - [ ] I have added necessary documentation (if appropriate)
 
 ## Dependency
+
 - Please add the links to the dependent PR need to be merged before this (if any).
 
 ## Special notes for your reviewer:
