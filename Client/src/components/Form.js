@@ -1,11 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import List from "./List";
 import { default as api } from "../store/apiSlice";
+import { CSVLink } from "react-csv";
+import axios from "axios";
+
+const headers = [
+  { label: "ID", key: "_id" },
+  { label: "Date", key: "date" },
+  { label: "Name", key: "name" },
+  { label: "Category", key: "type" },
+  { label: "Amount (INR)", key: "amount" },
+];
 
 export default function Form() {
   const { register, handleSubmit, resetField } = useForm();
   const [addTransaction] = api.useAddTransactionMutation();
+  const [transactions, setTransactions] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/api/labels")
+      .then((response) => {
+        setTransactions(response.data);
+      })
+      .catch((error) => {
+        console.error("There was an error!", error);
+      });
+  }, []);
+
+  const csvLink = {
+    filename: "Transactions.csv",
+    headers: headers,
+    data: transactions,
+  };
 
   const onSubmit = async (data) => {
     if (!data) return {};
@@ -55,6 +83,12 @@ export default function Form() {
               Make Transaction
             </button>
           </div>
+          <CSVLink
+            {...csvLink}
+            className="border py-2 text-white bg-indigo-500 w-full"
+          >
+            Download Transactions
+          </CSVLink>
         </div>
       </form>
 
