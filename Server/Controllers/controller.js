@@ -102,6 +102,7 @@ async function get_Labels(req, res) {
             type: v.type,
             amount: v.amount,
             color: v.categories_info["color"],
+            date: v.date,
           }
         )
       );
@@ -112,14 +113,6 @@ async function get_Labels(req, res) {
     });
 }
 
-const transactions = [
-  { name: "Transaction 1", category: "Food", amount: 50.0 },
-];
-
-function download_csv(req, res) {
-  res.send(transactions);
-}
-
 module.exports = {
   create_Transaction,
   get_Transaction,
@@ -127,5 +120,4 @@ module.exports = {
   get_Categories,
   delete_Transaction,
   get_Labels,
-  download_csv,
 };
