@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import List from "./List";
 import { default as api } from "../store/apiSlice";
 import { CSVLink } from "react-csv";
@@ -83,6 +84,13 @@ export default function Form() {
               Make Transaction
             </button>
           </div>
+
+          <Link
+            to="/budgets/pending-Transactions"
+            className="border py-2 text-white bg-indigo-500 w-full"
+          >
+            Pending Transactions
+          </Link>
           <CSVLink
             {...csvLink}
             className="border py-2 text-white bg-indigo-500 w-full"

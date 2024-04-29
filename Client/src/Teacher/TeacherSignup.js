@@ -53,7 +53,6 @@ function TeacherSignup() {
     } catch (err) {
       console.log(err);
     }
-    // console.log('vipin');
   }
   // console.log(error);
 
@@ -74,7 +73,7 @@ function TeacherSignup() {
             <Input
               placeholder="Name"
               className="min-w-[300px] py-3"
-              onChange={e => setname(e.target.value)}
+              onChange={(e) => setname(e.target.value)}
             />
           </Form.Item>
 
@@ -92,7 +91,7 @@ function TeacherSignup() {
               type="email"
               className="min-w-[300px] py-3"
               placeholder="Enter your Email"
-              onChange={e => setemail(e.target.value)}
+              onChange={(e) => setemail(e.target.value)}
             />
           </Form.Item>
           <Form.Item
@@ -108,7 +107,7 @@ function TeacherSignup() {
               type="sem"
               placeholder="Semester"
               className="min-w-[300px] py-3"
-              onChange={e => setSem(e.target.value)}
+              onChange={(e) => setSem(e.target.value)}
             />
           </Form.Item>
           <Form.Item
@@ -125,7 +124,7 @@ function TeacherSignup() {
               type="subject"
               placeholder="Subject"
               className="min-w-[300px] py-3"
-              onChange={e => setSubject(e.target.value)}
+              onChange={(e) => setSubject(e.target.value)}
             />
           </Form.Item>
 
@@ -141,7 +140,7 @@ function TeacherSignup() {
             <Input.Password
               placeholder="password"
               className="min-w-[300px] py-3"
-              onChange={e => setpassword(e.target.value)}
+              onChange={(e) => setpassword(e.target.value)}
             />
           </Form.Item>
 

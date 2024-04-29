@@ -90,7 +90,6 @@ function Chart() {
   };
   return (
     <div>
-      {/* vipin */}
       <div className="flex mx-auto justify-center gap-4 mt-10 items-center flex-wrap">
         <div className="border-2  p-3 py-14  bg-gray-100 ">
           <BarChart

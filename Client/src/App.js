@@ -34,13 +34,16 @@ import PlagChecker from "./PlagChecker/PlagChecker";
 import Assignment from "./Assignment/Assignment";
 import Student from "./Attendance/Student";
 import StudentShowMarks from "./Marks/StudentShowMarks";
+import AppContext from "antd/es/app/context";
+import Approval from "./router/Approval";
+import Pending_Transactions from "./router/Pending_Transactions";
 
 export const TOAST_SUCCESS = "toast_success";
 export const TOAST_ERROR = "toast_error";
 
 function App() {
-  const isLoading = useSelector(state => state.appConfigReducer.isloading);
-  const toastData = useSelector(state => state.appConfigReducer.toastData);
+  const isLoading = useSelector((state) => state.appConfigReducer.isloading);
+  const toastData = useSelector((state) => state.appConfigReducer.toastData);
   const loadingRef = useRef(null);
   useEffect(() => {
     if (isLoading) {
@@ -89,20 +92,23 @@ function App() {
           <Route path="chart" element={<Chart />} />
         </Route>
         <Route path="/marks" element={<Marks />}>
-          
           <Route path="secA" element={<MarksSecA />} />
           <Route path="secB" element={<MarksSecB />} />
-         
         </Route>
-          
-         <Route path="/student/attendanceshow" element={<Student />} />
-         <Route path="/student/marksshow" element={<StudentShowMarks />} />
+
+        <Route path="/student/attendanceshow" element={<Student />} />
+        <Route path="/student/marksshow" element={<StudentShowMarks />} />
         <Route path="/logout" element={<Logout />} />
 
         <Route path="/plagchecker" element={<PlagChecker />} />
         <Route path="/assignment" element={<Assignment />} />
 
         <Route path="/budgets" element={<Budget />} />
+        <Route path="/approval" element={<Approval />} />
+        <Route
+          path="/budgets/pending-Transactions"
+          element={<Pending_Transactions />}
+        ></Route>
 
         <Route path="/feedback" element={<Feedback />}>
           <Route path="dld" element={<DLD />} />
