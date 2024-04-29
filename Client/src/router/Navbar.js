@@ -12,7 +12,11 @@ function Navbar() {
 
   useEffect(() => {
     // Set Navbar visibility based on current location
-    if (location.pathname === "/budgets") {
+    if (
+      location.pathname === "/budgets" ||
+      location.pathname === "/Approval" ||
+      location.pathname === "/budgets/pending-Transactions"
+    ) {
       setIsNavbarVisible(false);
     } else {
       setIsNavbarVisible(true);
@@ -52,6 +56,14 @@ function Navbar() {
                   className=" hover:underline transition-all duration-500"
                 >
                   Budget
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/Approval"
+                  className=" hover:underline transition-all duration-500"
+                >
+                  Approval
                 </Link>
               </li>
             </ul>

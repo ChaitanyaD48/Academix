@@ -33,7 +33,7 @@ function Show() {
         <h1 className="w-[100px]">TotalClass</h1>
         <h1 className="w-[100px]">Today</h1>
       </div>
-      
+
       <div>
         {data?.map((item, index) => {
           if (index === 0) {
@@ -42,8 +42,7 @@ function Show() {
           // console.log(index);
           // var present = false;
           // const handleClick = e => {
-            // e.preventDefault();
-          //   console.log("vipin");
+          // e.preventDefault();
           //   setcnt(cnt+1);
           //   console.log(cnt);
           //   present = !present;
@@ -51,9 +50,8 @@ function Show() {
 
           return (
             <>
-            <hr style={{ color: "black", width: "100%", height: "2px" }} />
+              <hr style={{ color: "black", width: "100%", height: "2px" }} />
               <div className="flex gap-2 py-2  items-center ">
-                
                 <h1 className="w-[100px]">{item?.MIS}</h1>
                 <h1 className="w-[300px]">{item?.name}</h1>
                 <h1 className="w-[100px]">{item?.currentAbsent}</h1>
@@ -75,7 +73,6 @@ function Show() {
                   {item?.current ? "P" : "A"}
                 </button>
               </div>
-              
             </>
           );
         })}
